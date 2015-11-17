@@ -1,0 +1,49 @@
+[user]
+	name = Ivan Stiazkin
+	email = i_stiazkin@wargaming.net
+[credential]
+	helper = cache --timeout=900
+
+[alias]
+	co = checkout
+	cof = checkout -f
+	ci = commit
+	rs = reset
+	hr = reset --hard
+	br = branch -v
+	brd = branch -D
+       
+	df = diff --color --color-words --abbrev
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lg = log --graph --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+        st = status -s
+
+	ss = stash
+	sp = stash pop
+	sd = stash drop
+
+	rbi = rebase -i
+	rbc = rebase --continue
+
+	masta = checkout master
+	dev = checkout develop
+
+        rbdev = rebase -i develop
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[push]
+	default = current 
