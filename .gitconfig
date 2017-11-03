@@ -1,6 +1,5 @@
 [user]
-	name = Ivan Stiazkin
-	email = i_stiazkin@wargaming.net
+	name = Ivan Styazkin
 [credential]
 	helper = cache --timeout=900
 
